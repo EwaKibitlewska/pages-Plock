@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}    
+nav.desktop, header {
+    height: 360px;
+}
+nav.desktop {
+    float: left;
+    width: 300px;   
+}
+
+header {
+    float: left;
+    width: calc(100% - 300px);
+    background-image: url(miasto.jpg);
+    background-size:  cover;
+    background-position: center;
+    margin-top: 10px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section h1 {
+    font-size: 30px;
+    font-family: arial;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: black solid 2px;
+    
+}
+
+section h2 {
+    font-size: 25px;
+    font-family: arial;
+    display: block;
+    text-align: center;
+    padding:  10px 0;
+}
+
+nav.desktop ul{
+    list-style: none;
+}
+
+nav.desktop a {
+    display: block;
+    line-height: 72px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    padding: 0 5px 0 30px;
+}
+
+nav.desktop i {
+    border-right: black solid 2px;
+    width: 50px;
+    margin-right: 30px;
+    transition: 0.2s;
+}
+
+nav.desktop a:hover i {
+    margin-right: 50px;
+    color: grey;
+}
+
+ nav.mobile {
+    display: none;
+
+}
+
+@media (max-width: 1024px) {
+    nav.mobile {
+    display: block;
+    position: fixed;
+    width: 72px;
+    height: 100%;
+    background: black;
+    color: white;
+
+}
+    nav.desktop {
+    display: none;
+}
+    header {
+        width: 100%;
+    }
+
+    nav.mobile a {
+    display: block;
+    line-height: 10vh;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+    }
+
+    nav.mobile a:hover {
+        color:darkslategrey;
+    }
+
+    .strona{
+        font-size: 15px;
+        margin-left: 15px;
+        display: block;
+        text-align: center;
+
+    }
+
+    
